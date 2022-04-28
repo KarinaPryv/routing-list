@@ -1,0 +1,14 @@
+<div class="container">
+  <main>
+      <h3 class="words-list">Bad words: <span class="bad-word">java</span></h3>
+      <form name="badWordsForm">
+          <div class="word-input-block">
+              <input type="text" name="wordInput" class="word-input form-control" placeholder="word here..." [(ngModel)]="newWord" [class.is-invalid]="isWordInputInvalid">
+              <input type="button" name="addButton" class="add-btn" value="Add" (click)="addWord()">
+              <input type="button" name="resetButton" class="reset-btn" value="Reset" (click)="reset()">
+          </div>
+          <textarea name="textInput" class="text-input form-control" placeholder="text here..." [(ngModel)]="originalText" [class.is-invalid]="isTextInputInvalid"> {{ originalText }}</textarea>
+          <input type="button" name="cenzorButton" class="cenzor-btn" value="Cenzor" (click)="cenzor()">
+      </form>
+  </main>
+</div>

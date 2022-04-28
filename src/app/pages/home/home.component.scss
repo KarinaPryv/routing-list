@@ -1,0 +1,34 @@
+@import '../../shared/styles/variables';
+
+.container {
+    height: calc(100vh - 80px);
+    align-items: center;
+    display: flex;
+}
+
+.card {
+    padding: 0;
+}
+
+.card-title {
+    color: crimson;
+    text-align: center;
+}
+
+.card-body {
+    padding: 5px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    border-style: none;
+    &:hover {
+        background-color: rgb(9, 136, 9)
+    }
+}

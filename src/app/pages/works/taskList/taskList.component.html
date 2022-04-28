@@ -1,0 +1,10 @@
+<div class="container">
+  <h2>Count of Task {{ countOfTasks }}</h2>
+  <form #addTaskForm="ngForm" (ngSubmit)="addNewTask(addTaskForm)">
+      <div class="d-flex justify-content-between">
+          <input type="text" name="task" [(ngModel)]="newTaskName" required>
+          <input type="submit" value="add" [disabled]="!addTaskForm.form.valid">
+      </div>
+  </form>
+  <app-tasks-table [tasks]="tasksArr"></app-tasks-table>
+</div>

@@ -1,0 +1,39 @@
+.container {
+    padding-top: 40px;
+}
+
+form {
+    border-bottom: 1px solid lightgrey;
+    border-top: 1px solid lightgrey;
+    padding-top: 12px;
+}
+
+input[type=text] {
+    width: 84%;
+    height: 34px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(196, 195, 195);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+input[type=submit] {
+    width: 15%;
+    height: 34px;
+    background-color: rgb(49, 192, 61);
+    border-style: none;
+    border-radius: 5px;
+    font-size: 16px;
+    letter-spacing: -0.75px;
+    color: white;
+    font-weight: 300;
+    &:hover {
+        cursor: pointer;
+        background-color: rgb(42, 169, 53);
+        
+    }
+    &:disabled {
+        cursor: auto;
+        background-color: rgb(49, 192, 61);
+    }
+}

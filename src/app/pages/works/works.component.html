@@ -1,0 +1,20 @@
+<ul class="nav nav-tabs">
+  <div class="d-flex flex-row">
+    <li class="nav-title">Last works > > ></li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="[ 'cenzor' ]" routerLinkActive="active">Cenzor</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="[ 'tasklist' ]" routerLinkActive="active">Tasks</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="[ 'userlist' ]" routerLinkActive="active">Users</a>
+    </li>
+  </div>
+  <div>
+    <li class="nav-item">
+      <a class="nav-link nav-home" [routerLink]="[ '/home' ]">Back to > > > Home</a>
+    </li>
+  </div>
+</ul>
+<router-outlet></router-outlet>

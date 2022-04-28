@@ -1,0 +1,21 @@
+@import '../../shared/styles/variables';
+
+.nav {
+    margin-top: 20px;
+    // width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-title {
+    padding: 10px 40px 0 10px;
+    color: rgb(59, 59, 59);
+}
+
+.active {
+    color: $primary-color !important;
+}
+
+.nav-home {
+    color: crimson;
+}
